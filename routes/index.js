@@ -35,6 +35,7 @@ router.get('/', function(req, res, next) {
 
     var config = users.loadUsers("iportal_users.csv", "iportal_attributes.csv");
     config.cfg = cfg;
+    config.apps = appPaths;
 
     res.render('index', config);
 });
