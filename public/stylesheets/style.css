@@ -17,6 +17,39 @@ a {
     text-align: center;
 }
 
+.impersonate-form {
+    border: 1px solid lightgrey;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    background-color: #fafafa;
+}
+
+.impersonate-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.impersonate-row label {
+    font-weight: bold;
+    margin: 0 4px 0 0;
+}
+
+.impersonate-row input,
+.impersonate-row select {
+    padding: 4px 6px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.impersonate-help {
+    margin-top: 8px;
+    font-size: 12px;
+    color: grey;
+}
+
 .user-panel {
     display: inline-block;
     position: relative;

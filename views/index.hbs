@@ -1,4 +1,29 @@
-<div class="user-container">   
+<div class="impersonate-form">
+    <form action="/login" method="get">
+        <div class="impersonate-row">
+            <label for="impersonate-user">User ID</label>
+            <input type="text" id="impersonate-user" name="user" required autocomplete="off" />
+
+            <label for="impersonate-directory">User Directory</label>
+            <input type="text" id="impersonate-directory" name="directory" required autocomplete="off" />
+
+            <label for="impersonate-app">App</label>
+            <select id="impersonate-app" name="app" required>
+                {{#each apps}}
+                    <option value="{{this.appName}}">{{this.appName}}</option>
+                {{/each}}
+            </select>
+
+            <button type="submit" class="btn btn-primary">Impersonate</button>
+        </div>
+        <div class="impersonate-help">
+            Use this to preview what an arbitrary user can see before granting them access.
+            The user and directory must already exist in Qlik Sense.
+        </div>
+    </form>
+</div>
+
+<div class="user-container">
 
     {{#each users}}
         <div class="user-panel">                                                       
