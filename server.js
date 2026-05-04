@@ -32,7 +32,7 @@ try {
   };
 } catch (e) {
   logger.error(e);
-  logger.error('iPortal application terminated.');
+  logger.error('Qlik Sense Impersonator terminated.');
   process.exit(1);
 }
 
