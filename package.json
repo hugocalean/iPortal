@@ -1,9 +1,11 @@
 {
-  "name": "iPortal",
+  "name": "qlik-sense-impersonator",
   "version": "0.1.0",
+  "description": "Qlik Sense Impersonator (formerly iPortal) — web app for impersonating Qlik Sense users via the QPS ticketing API.",
   "private": true,
   "scripts": {
-    "start": "node Node/iPortal/server.js"
+    "start": "node Node/iPortal/server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
     "bluebird": "^3.4.0",
